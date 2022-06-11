@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VegefShop - Hàng Việt Nam chất lượng cao</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="~/Font_End/Login/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="~/Font_End/Login/css/style.css">
+
+    <link rel="stylesheet" href="~/Font_End/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/Font_End/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="~/Font_End/css/animate.css">
+
+    <link rel="stylesheet" href="~/Font_End/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Font_End/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/Font_End/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="~/Font_End/css/aos.css">
+
+    <link rel="stylesheet" href="~/Font_End/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="~/Font_End/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="~/Font_End/css/jquery.timepicker.css">
+
+
+    <link rel="stylesheet" href="~/Font_End/css/flaticon.css">
+    <link rel="stylesheet" href="~/Font_End/css/icomoon.css">
+</head>
+<body>
+
+    <!-- Thanh trên -->
+    <div class="py-1 bg-primary">
+        <div class="container">
+            <div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+                <div class="col-lg-12 d-block">
+                    <div class="row d-flex">
+                        <div class="col-md pr-4 d-flex topper align-items-center">
+                            <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+                            <span class="text">+84 919504570</span>
+                        </div>
+                        <div class="col-md pr-4 d-flex topper align-items-center">
+                            <div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+                            <span class="text">vegefoods@gmail.com</span>
+                        </div>
+                        <div class="col-md-5 pr-4 d-flex topper align-items-center text-lg-right">
+                            <span class="text">Giao hàng nhanh 24/7 &amp; Miễn phí đổi trả</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Thanh Chức Năng-->
+    <div style="background-color:aliceblue">
+        <div class="container">
+            <a class="navbar-brand" href="@Url.Action("Index","TrangChu")">VegefShop</a>
+        </div>
+    </div>
+
+    <!-- Đăng nhập -->
+    <section class="sign-in">
+        <div class="container" style="background-color: white">
+            <div class="signin-content">
+                <div class="signin-image">
+                    <figure><img src="~/Font_End/Login/images/signin-image.jpg" alt="sing in image"></figure>
+                    <a href="@Url.Action("DangKy","KhachHang")" class="signup-image-link">Tạo tài khoản mới!</a>
+                </div>
+
+                <div class="signin-form">
+                    <h2 class="form-title" style="color: green"><b>VegefShop | </b> Đăng Nhập</h2>                                                                                  
+                    <form method="POST" class="register-form" id="login-form">
+                        <div class="form-group">
+                            <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="text" name="taikhoan" id="your_name" placeholder="Tài Khoản" />
+                        </div>
+                        <div class="form-group">
+                            <label for="your_pass"><i class="zmdi zmdi-email"></i></label>
+                            <input type="password" name="matkhau" id="your_pass" placeholder="Mật Khẩu" />
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
+                            <label for="remember-me" class="label-agree-term"><span><span></span></span>Nhớ Tài Khoản</label>
+                        </div>
+                        <h6 class="text-danger">@ViewBag.ThongBao</h6>
+                        <div class="form-group form-button">
+                            <input type="submit" name="signin" id="signin" class="form-submit" value="Đăng Nhập" />
+                        </div>
+                    </form>
+                    <div class="social-login">
+                        <span class="social-label">Hoặc đăng nhập với</span>
+                        <ul class="socials">
+                            <li><a href="#"><i class="display-flex-center zmdi zmdi-facebook"></i></a></li>
+                            <li><a href="#"><i class="display-flex-center zmdi zmdi-twitter"></i></a></li>
+                            <li><a href="#"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="ftco-footer ftco-section" style="background-color: aliceblue">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Vegefoods</h2>
+                        <p>Vegefoods luôn mang đến những điều tốt nhất cho sức khỏe của bạn và gia đình</p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                            <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                            <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4 ml-md-5">
+                        <h2 class="ftco-heading-2">Danh mục</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="py-2 d-block">Sản phẩm</a></li>
+                            <li><a href="#" class="py-2 d-block">Yêu thích</a></li>
+                            <li><a href="#" class="py-2 d-block">Giỏ Hàng</a></li>
+                            <li><a href="#" class="py-2 d-block">Thông tin shop</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Liên hệ</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li><span class="icon icon-map-marker"></span><span class="text">Số 4, Đường số 4, Phường Linh Xuân, Tp Thủ Đức</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+84 919504570</span></a></li>
+                                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">vegefoods@gmail.com</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                    <p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> Trang web được thực hiện với <i class="icon-heart color-danger" aria-hidden="true"></i> bởi <a href="https://colorlib.com" target="_blank">Minh & Đăng</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div>
+        @RenderBody()
+    </div>
+    <!-- JS -->
+    <script src="~/Font_End/Login/vendor/jquery/jquery.min.js"></script>
+    <script src="~/Font_End/Login/js/main.js"></script>
+
+    <script src="~/Font_End/js/jquery.min.js"></script>
+    <script src="~/Font_End/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="~/Font_End/js/popper.min.js"></script>
+    <script src="~/Font_End/js/bootstrap.min.js"></script>
+    <script src="~/Font_End/js/jquery.easing.1.3.js"></script>
+    <script src="~/Font_End/js/jquery.waypoints.min.js"></script>
+    <script src="~/Font_End/js/jquery.stellar.min.js"></script>
+    <script src="~/Font_End/js/owl.carousel.min.js"></script>
+    <script src="~/Font_End/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/Font_End/js/aos.js"></script>
+    <script src="~/Font_End/js/jquery.animateNumber.min.js"></script>
+    <script src="~/Font_End/js/bootstrap-datepicker.js"></script>
+    <script src="~/Font_End/js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="~/Font_End/js/google-map.js"></script>
+    <script src="~/Font_End/js/main.js"></script>
+</body>
+</html>

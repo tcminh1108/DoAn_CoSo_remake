@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="dbQLNongSan">
+  <DataContextMoniker Name="/dbQLNongSanDataContext" />
+  <nestedChildShapes>
+    <classShape Id="8eedcdd1-6423-4a1e-8f97-b2eaccbe591d" absoluteBounds="0.75, 1.875, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/dbQLNongSanDataContext/LoaiSanPham" />
+      <nestedChildShapes>
+        <elementListCompartment Id="79aeac1f-62fc-473c-a237-ad8095e7d5ba" absoluteBounds="0.765, 2.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4291e8d9-d38c-4bd4-926d-99e09e88190a" absoluteBounds="3.5, 1, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/dbQLNongSanDataContext/SanPham" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3d04be9c-bf1c-4fae-b543-4c47ba5487b1" absoluteBounds="3.515, 1.46, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 2.47199625651042); (3.5 : 2.47199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbQLNongSanDataContext/LoaiSanPham/LoaiSanPham_SanPham" />
+      <nodes>
+        <classShapeMoniker Id="8eedcdd1-6423-4a1e-8f97-b2eaccbe591d" />
+        <classShapeMoniker Id="4291e8d9-d38c-4bd4-926d-99e09e88190a" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="ae2bd72c-b609-4973-9ace-6b81a02fa2f8" absoluteBounds="1, 4.125, 2, 2.5401025390625">
+      <DataClassMoniker Name="/dbQLNongSanDataContext/KhachHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c6660230-1c89-4896-9cb2-80cfd58d05e6" absoluteBounds="1.0150000000000001, 4.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

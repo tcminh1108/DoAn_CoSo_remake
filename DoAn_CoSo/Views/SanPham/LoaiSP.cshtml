@@ -1,0 +1,12 @@
+﻿@model IEnumerable<DoAn_CoSo.Models.LoaiSanPham>
+<div class="row justify-content-center">
+    <div class="col-md-10 mb-5 text-center">
+        <ul class="product-category">
+            <li><a href="#" class="active">Tất Cả</a></li>
+            @foreach (var LoaiSP in Model)
+            {
+                <li><a href="@Url.Action("SPTheoLoai","SanPham", new {Ma_LSP = LoaiSP.Ma_LSP})">@LoaiSP.Ten_LSP</a></li>
+            }
+        </ul>
+    </div>
+</div>

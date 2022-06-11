@@ -1,0 +1,47 @@
+﻿@model IEnumerable<DoAn_CoSo.Models.SanPham>
+<div class="container">
+    <div class="row">
+        @foreach (var SPLienQuan in Model)
+        {
+            <div class="col-md-6 col-lg-3 ftco-animate" style="width: 200px">
+                <div class="product">
+                    <a href="#" class="img-prod">
+                        <img class="img-fluid" src="~/All_Images/SanPham/@SPLienQuan.Hinhanh" alt="@SPLienQuan.Ten_SP">
+                        @if (@SPLienQuan.Khuyenmai != 0)
+                        {
+                            <span class="status">@SPLienQuan.Khuyenmai%</span>
+                        }
+                        <div class="overlay"></div>
+                    </a>
+                    <div class="text py-3 pb-4 px-3 text-center">
+                        <h3><a href="#">@SPLienQuan.Ten_SP</a></h3>
+                        <div class="d-flex">
+                            <div class="pricing">
+                                @if (@SPLienQuan.Khuyenmai != 0)
+                                {
+                                    <p class="price"><span class="mr-2 price-dc">@SPLienQuan.Giaban VND</span><span class="price-sale">@SPLienQuan.Giakhuyenmai VND</span></p>
+                                }
+                                else
+                                {
+                                    <p class="price"><span>@SPLienQuan.Giaban VND</span></p>
+                                }
+
+                            </div>
+                        </div>
+                        <div class="bottom-area d-flex px-3">
+                            <div class="m-auto d-flex">
+                                <a href="@Url.Action("ChiTietSP","SanPham", new {Ma_SP = SPLienQuan.Ma_SP})" class="add-to-cart d-flex justify-content-center align-items-center text-center">
+                                    <span><i class="ion-ios-menu"></i></span>
+                                </a>
+                                <a href="#" class="buy-now d-flex justify-content-center align-items-center mx-1">
+                                    <span><i class="ion-ios-cart"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
